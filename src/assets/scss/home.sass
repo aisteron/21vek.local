@@ -1,0 +1,61 @@
+.main-slider
+	background: url(/assets/img/back2.jpg)
+	width: 100%
+	background-size: cover
+	.inner
+		width: 1170px
+		min-height: 570px
+		margin: 0 auto
+		display: flex
+		h1
+			margin: 0
+		input[type="text"]
+			outline: 0
+			border: 0
+			border-bottom: 1px solid #707070
+		.panels
+			align-self: center		
+			.review
+				width: 330px
+				background: #fff
+				border: 1px solid $green
+				border-radius: $radius
+				padding: 1rem
+				color: $green
+				font-size: 1.1rem
+				margin-bottom: 1rem
+				.reviewer
+					display: block
+					text-align: right
+					margin-top: 1rem
+					color: #333
+			form.lead
+				width: 330px
+				background: #fff
+				border: 1px solid $green
+				border-radius: $radius
+				padding: 1rem
+				span
+					font-weight: 500
+					font-size: 1.1rem
+				input
+					display: block
+					&[type="text"]
+						margin: 1rem 0
+						padding-bottom: 5px
+
+		.person
+			align-self: flex-end
+			margin-bottom: -4px
+		.slogan
+			h1
+				font-size: 53px
+				color: #fff
+				font-weight: 500
+				line-height: 130%
+				text-shadow: 0 3px 6px #00000045
+				padding-top: 2rem
+				a
+					color: #fff
+					&:hover
+						color: $green	

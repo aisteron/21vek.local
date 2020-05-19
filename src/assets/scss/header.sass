@@ -1,0 +1,125 @@
+.wrapper > header
+	width: 100vw
+	background: rgb(191,210,85)
+	background: linear-gradient(90deg, rgba(191,210,85,1) 0%, rgba(114,170,0,1) 100%)
+	.inner
+		width: 1170px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #fff
+		padding: 0.5rem 0
+		a
+			color: #fff
+		.logo
+			display: flex
+			.desc
+				align-self: flex-end
+				margin-bottom: 0.5rem
+			img
+				margin-right: 1rem
+			span.gold
+				color: #FFE47A
+				font-size: 47px
+				font-weight: bold
+				display: block
+				text-shadow: 0 1px 3px #33333375
+		.address
+			align-self: flex-end
+			p
+				text-shadow: 0 1px 1px #267A0D
+				margin-top: -1rem
+				img
+					vertical-align: top
+					margin-right: 1rem
+					
+				a
+					display: inline-block
+					margin-left: 1rem
+					font-size: 0.9rem	
+			ul
+				padding-left: 0
+				margin-bottom: 0.35rem
+				padding-top: 3px
+				li
+					display: inline-block
+					padding-right: 2rem
+					&.discount
+						position: relative
+						padding-right: 0
+						margin-right: 2rem
+						&:after
+							content: url('/assets/img/discount.svg')
+							position: absolute
+							right: -15px
+
+					a
+						text-decoration: none
+						text-transform: uppercase
+						font-weight: 500
+						text-shadow: 0 1px 1px #267A0D
+						&.active
+							background: $light-green
+							padding: 0.7rem
+							color: $green
+							text-shadow: none	
+		.tel
+			align-self: flex-end
+			margin-bottom: 0.3rem
+			span.maintel
+				font-size: 24px
+				a
+					text-decoration: none
+			.iconset
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-top: 0.5rem
+				margin-left: 1.4rem
+				span
+					font-weight: 500	
+				img
+					&.viber
+						margin-top: 3px
+					&.wa
+						margin-top: 2px		
+.wrapper > nav
+	width: 100%
+	border-bottom: 1px solid $green
+	//padding-bottom: 0.5rem
+	.inner
+		width: 1170px
+		margin: 0 auto
+		a
+			color: $green
+			text-decoration: none
+			text-transform: uppercase
+			font-weight: 500
+		ul
+			margin: 0
+			padding-left: 0
+			li
+				display: inline-block
+				margin-right: 1.3rem
+				position: relative
+				padding: 1rem
+				img
+					position: absolute
+				&.call
+					text-transform: uppercase
+					font-weight: 500
+					color: #707070
+					float: right
+					margin-right: 0
+				&.all
+					padding-left: 1rem
+					img
+						left: 0rem
+				&.dz
+					img
+						top: 4px
+						right: -12px
+				&.active, &:hover
+					background: $light-green
+									
