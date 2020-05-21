@@ -46,8 +46,13 @@ nav
 				img(src="/assets/img/nav-icons/rat.png")
 			li.dz
 				a(href="#") дезодорация
-				img(src="/assets/img/nav-icons/socks.svg")
+				img(src="/assets/img/nav-icons/socks.png")
 			li
 				a(href="#") фумигация
 				img(src="/assets/img/nav-icons/plant.png")
-			li.call заказать звонок	
+			li.call заказать звонок
+				form(style="display: none")
+					span.close &times;
+					span.slogan Оставьте свой телефон и мы вам перезвоним
+					input(type="text" placeholder="Ваш телефон" required)
+					input(type="submit" value="Отправить")

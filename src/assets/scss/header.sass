@@ -1,5 +1,5 @@
 .wrapper > header
-	width: 100vw
+	width: 100%
 	background: rgb(191,210,85)
 	background: linear-gradient(90deg, rgba(191,210,85,1) 0%, rgba(114,170,0,1) 100%)
 	.inner
@@ -112,6 +112,33 @@
 					color: #707070
 					float: right
 					margin-right: 0
+					position: relative
+					form
+						background: #fff
+						position: absolute
+						text-transform: none
+						top: 3.25rem
+						width: 276px
+						padding: 1rem
+						border: 1px solid $green
+						right: 0
+						span.close
+							position: absolute
+							right: 0
+							top: 0
+							background: $green
+							color: #fff
+							font-size: 1.4rem
+							padding: 0 6px
+						span.slogan
+							display: inline-block
+						input[type="text"]
+							display: block		
+							margin: 1rem 0
+							padding: 0.5rem
+							border: 0
+							outline: 0
+							border-bottom: 1px solid #707070
 				&.all
 					padding-left: 1rem
 					img
