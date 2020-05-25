@@ -31,10 +31,40 @@ header
 				span 24/7
 nav
 	.inner
-		ul
+		ul.level-zero
 			li.all
 				img(src="/assets/img/nav-icons/dots.svg")
 				a(href="#") все услуги
+				ul.level-one(style="display: none")
+					li.hasChild
+						a(href="#") дезинфекция
+						ul.level-two(style="display: none")
+							li
+								a(href="#") Обработка от плесени
+							li
+								a(href="#") Дезинфекция транспорта
+							li
+								a(href="#") Дезинфекция бань и саун
+							li
+								a(href="#") Удаление грибка
+
+					li.hasChild
+						a(href="#") дезинсекция
+						ul.level-two(style="display: none")
+							li
+								a(href="#") Уничтожение тараканов
+							li
+								a(href="#") Уничтожение клещей
+							li
+								a(href="#") Уничтожение клопов
+							li
+								a(href="#") Уничтожение мух
+					li
+						a(href="#") дератизация
+					li
+						a(href="#") дезодорация
+					li
+						a(href="#") фумигация
 			li.active
 				a(href="#") дезинфекция
 				img(src="/assets/img/nav-icons/virus.png")

@@ -1,0 +1,143 @@
+.bread
+	width: 1170px
+	margin: 0 auto
+	ul
+		list-style: none
+		padding-left: 0
+		color: #707070
+		li
+			display: inline-block
+			padding-right: 0.5rem
+			&:after
+				content: '/'
+				padding-left: 0.5rem
+				color: $green
+			&:last-of-type 
+				&:after
+					content: ''
+			a
+				color: $green
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+
+.wrapper
+	background: $light-green
+	>article
+		display: flex
+		width: 1170px
+		margin: 0 auto
+		justify-content: space-between
+		.sidebar
+			width: 260px		
+		>.content
+			width: 860px
+			.intro
+				background: #fff
+				box-shadow: 0 2px 4px #1111114f
+				.clip-area
+					height: 280px
+					background: rgb(36,64,137)
+					background: linear-gradient(56deg, rgba(36,64,137,1) 0%, rgba(53,107,255,1) 100%)
+					display: flex
+					position: relative
+					border-radius: 5px 5px 0 0 
+					.desc
+						width: 300px
+						color: #fff
+						font-size: 20px
+						line-height: 33px
+						padding: 40px
+						input[type="submit"]
+							display: block
+							background: transparent
+							border-color: #0DA6BE
+							width: 140px
+							margin-top: 1rem
+							&:hover
+								box-shadow: 1px 1px 7px #06ddff30
+								background: #1384af59
+					img
+						clip-path: polygon(40% 0%, 100% 0, 100% 100%, 30% 100%)
+						position: absolute
+						border-radius: 5px 5px 0 0 
+				.content
+					display: flex
+					padding: 0 40px 
+					img
+						margin-top: 2.5rem
+						min-width: 127px
+					.desc
+						margin-left: 43px
+						h1
+							color: #555
+							font-size: 41px
+						p
+							color: #707070
+			.price-table
+				.tab-area
+					.head
+						border-bottom: 1px solid #707070
+						color: #555
+						span
+							padding-right: 0.5rem
+							display: inline-block
+							margin-right: 0.5rem
+							cursor: pointer
+							&:first-of-type
+								padding-left: 0.5rem
+							&.active
+								border-bottom: 1px solid $green
+								padding-bottom: 4px
+						input[type="submit"]
+							float: right
+							margin-top: -1rem
+					.body
+						.fiz
+							display: flex
+							.tabs
+								ul
+									padding-left: 0
+									list-style: none
+									background: #fff
+									margin: 0
+									width: 145px
+									padding: 0.5rem
+									padding-top: 1rem
+									li
+										margin-bottom: 1rem
+										&.active
+											color: $green
+							.content
+								table.tr4
+									border-collapse: collapse
+									color: #555555
+									thead
+										color: #fff
+										text-shadow: 0 1px #333
+										td
+											padding: 0.4rem
+											text-align: center
+										td:nth-of-type(1)
+											background: #E9E9E9
+											text-shadow: none
+											color: #777
+										td:nth-of-type(2)
+											background: #A8C84E
+										td:nth-of-type(3)
+											background: #96BD28
+										td:nth-of-type(4)
+											background: #71950C
+										td:nth-of-type(5)
+											background: #496107
+									tbody
+										td
+											padding: 1rem
+											text-align: center
+										tr:nth-of-type(2n)
+											background: #E2EEC5
+												
+
+											
+
+			
