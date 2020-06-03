@@ -75,6 +75,9 @@
 						p
 							color: #707070
 			.price-table
+				h2
+					font-size: 29px
+					color: #555
 				.tab-area
 					.head
 						border-bottom: 1px solid #707070
@@ -184,6 +187,35 @@
 								margin: 1rem 0
 								p
 									margin: 0
+			.stages
+				background-color: #fff
+				box-shadow: 0 2px 4px #11111161
+				padding: 31px 43px
+				h2
+					font-size: 29px
+					color: #555
+					margin-top: 0
+					margin-bottom: 34px
+				.list
+					display: flex
+					justify-content: space-between
+
+					.item
+						text-align: center
+						position: relative
+						&:after
+							content: url(/assets/img/stages/next.svg)
+							position: absolute
+							top: 40%
+							right: -65px
+						&:last-of-type
+							&:after
+								content: ''	
+						span
+							display: block
+							font-weight: bold
+							color: #707070
+							margin-top: 0.5rem	
 
 											
 
