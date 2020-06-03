@@ -106,37 +106,84 @@
 									padding-top: 1rem
 									li
 										margin-bottom: 1rem
+										cursor: pointer
+										&:hover
+											color: $green
 										&.active
 											color: $green
-							.content
-								table.tr4
+						table
 									border-collapse: collapse
 									color: #555555
+									
 									thead
 										color: #fff
 										text-shadow: 0 1px #333
 										td
 											padding: 0.4rem
 											text-align: center
-										td:nth-of-type(1)
-											background: #E9E9E9
-											text-shadow: none
-											color: #777
-										td:nth-of-type(2)
-											background: #A8C84E
-										td:nth-of-type(3)
-											background: #96BD28
-										td:nth-of-type(4)
-											background: #71950C
-										td:nth-of-type(5)
-											background: #496107
+											&:nth-of-type(1)
+												background: #E9E9E9
+												text-shadow: none
+												color: #777
+
 									tbody
 										td
 											padding: 1rem
 											text-align: center
 										tr:nth-of-type(2n)
 											background: #E2EEC5
-												
+									&.tr4
+										thead
+											td:nth-of-type(2)
+												background: #A8C84E
+											td:nth-of-type(3)
+												background: #96BD28
+											td:nth-of-type(4)
+												background: #71950C
+											td:nth-of-type(5)
+												background: #496107
+									&.tr2
+										width: 100%
+										table-layout: fixed
+										overflow-wrap: break-word
+										td
+											width: 100%
+										thead
+											tr
+												height: 75px
+											td:nth-of-type(2)
+												background: #71950C
+									&.tr3
+										thead
+											tr
+												td
+													&:nth-of-type(2)
+														background: #96BD28
+													&:nth-of-type(3)
+														background: #71950C
+									&.ur
+										width: 100%
+										table-layout: fixed
+										overflow-wrap: break-word
+										td
+											width: 100%
+										thead
+											tr
+												height: 75px
+												td
+													&:nth-of-type(2)
+														background: #96BD28	
+													&:nth-of-type(3)
+														background: #82B100		
+													&:nth-of-type(4)
+														background: #71950C			
+						.ur
+							.warn
+								background: #FACBC5
+								padding: 0.8rem
+								margin: 1rem 0
+								p
+									margin: 0
 
 											
 

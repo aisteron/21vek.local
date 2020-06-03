@@ -1,4 +1,5 @@
 export function $_(element) {return document.querySelector(element)}
+export function $$_(element) { return document.querySelectorAll(element)}
 
 $_('nav li.call').addEventListener('click', (e) => {
 
