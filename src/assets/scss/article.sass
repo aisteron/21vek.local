@@ -28,8 +28,66 @@
 		width: 1170px
 		margin: 0 auto
 		justify-content: space-between
+		h2
+			font-size: 29px
+			color: #555
 		.sidebar
-			width: 260px		
+			width: 260px
+			.box
+				background-color: #fff
+				border-radius: 5px
+				margin-bottom: 1rem 
+				&.retired
+					border: 1px solid $green
+				&.tech
+					border: 1px solid #254494
+					.header
+						background-color: #254494
+					p
+						margin: 1rem
+						color: #254494
+						text-align: center
+				&.dog
+					padding-bottom: 1rem
+					border: 1px solid $green
+					img
+						width: 100%
+					p
+						color: $green
+						margin: 1rem  1rem 0 1rem
+						text-align: center					
+				.header
+					text-transform: uppercase
+					background-color: #96BD28
+					color: #fff
+					font-weight: bold
+					padding: 0.5rem
+					text-align: center
+					border-radius: 5px 5px 0 0
+				input
+					margin: 0.8rem auto
+					display: block
+			.articles
+				span.title
+					text-transform: uppercase
+					color: $green
+					font-weight: bold
+					margin: 1rem 0
+					display: block
+				.list
+					.item
+						display: flex
+						margin-bottom: 1rem
+						img
+							margin-right: 1rem
+						a
+							color: #707070
+							text-decoration: none
+							&:hover
+								color: $green
+								text-decoration: underline
+
+					
 		>.content
 			width: 860px
 			.intro
@@ -75,9 +133,6 @@
 						p
 							color: #707070
 			.price-table
-				h2
-					font-size: 29px
-					color: #555
 				.tab-area
 					.head
 						border-bottom: 1px solid #707070
@@ -192,8 +247,6 @@
 				box-shadow: 0 2px 4px #11111161
 				padding: 31px 43px
 				h2
-					font-size: 29px
-					color: #555
 					margin-top: 0
 					margin-bottom: 34px
 				.list
@@ -216,7 +269,100 @@
 							font-weight: bold
 							color: #707070
 							margin-top: 0.5rem	
-
-											
-
-			
+			.features
+				.list
+					.item
+						font-weight: bold
+						text-shadow: 0 2px 2px #11111159
+						color: #fff
+						background: #CAE18E
+						display: flex
+						justify-content: space-between
+						align-items: center
+						padding-left: 2rem
+						margin: 2rem 0
+						transform: skew(-20deg)
+						img
+							margin-right: -1.5rem
+							transform: skew(20deg)
+						span
+							transform: skew(20deg)
+							font-size: 31px
+							font-weight: 500	
+							&.digit
+								font-size: 63px
+								padding-right: 1rem
+			.masters
+				background: #fff
+				padding: 31px 43px
+				h2
+					margin: 0
+					margin-bottom: 1rem
+				.list
+					display: flex
+					justify-content: space-between
+					.item
+						width: 248px
+					.desc
+						.header
+							background: rgb(172,214,51)
+							background: linear-gradient(180deg, rgba(172,214,51,1) 0%, rgba(150,189,40,1) 100%)	
+							font-weight: 500
+							color: #fff
+							font-size: 24px
+							text-align: center
+							border-radius: 5px 5px 0 0
+						.body
+							background: #CCE38F	 
+							color: #707070
+							font-size: 14px
+							padding: 0.8rem
+			.certs, .letters
+				.list
+					display: flex
+					justify-content: space-between
+			.lead
+				background: linear-gradient(180deg, rgba(172,214,51,1) 0%, rgba(150,189,40,1) 100%)
+				margin: 2rem 0
+				.inner
+					width: 860px
+					margin: 0 auto
+					display: flex
+					align-items: center
+					padding: 30px 0
+				.right
+					span.title
+						font-size: 53px
+						font-weight: bold
+						color: #fff
+						text-shadow: $text-shadow
+						display: block
+						margin-bottom: 2rem
+						font
+							color: red
+							text-shadow: 2px 4px 7px #fff8f8
+					form
+						background-color: #fff
+						width: 333px
+						border-radius: 5px
+						padding: 1.5rem
+						p
+							font-size: 18px
+							font-weight: 500
+						input[type="text"]
+							display: block
+							padding: 0.5rem
+							border: 0
+							border-bottom: 1px solid #707070
+							margin-bottom: 1rem		
+			.reviews
+				background: #fff
+				padding: 31px 43px 20px 43px
+				border-radius: 5px
+				box-shadow: 0 2px 4px #0000003b
+				color: #707070
+				margin-bottom: 2rem
+				.item
+					margin-bottom: 2rem
+				p.title
+					font-weight: 500
