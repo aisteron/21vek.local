@@ -1,5 +1,6 @@
 import './lazysizes'
 import './unveilhook'
 import './header-callback'
-import './header-menu'
 import './price-table'
+import './price-callback'
+import './fancyload'

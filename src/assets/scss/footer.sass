@@ -66,3 +66,42 @@ footer
 				span:nth-of-type(2)
 					display: inline-block
 					padding-top: 1rem
+	.modal-wrap
+		display: none
+		position: fixed
+		z-index: 1
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow: auto
+		background-color: rgba(0,0,0,0.4)
+
+		.callback
+			position: relative
+			background: #fff
+			width: 300px
+			margin: 15% auto
+			animation-name: animatetop
+			animation-duration: 0.4s
+			padding: 1rem
+			box-shadow: 2px 2px 2px #33333340
+			border-radius: 3px
+
+			span.close
+				position: absolute
+				top: -12px
+				right: -26px
+				color: #fff
+				font-size: 2rem
+				text-shadow: 1px 1px 1px #333
+				cursor: pointer
+				&:hover
+					color: red
+			input[type="text"]
+				padding: 0.5rem
+				border: none
+				outline: none
+				border-bottom: 1px solid $green
+				display: block
+				margin: 1rem 0

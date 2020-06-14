@@ -20,7 +20,6 @@
 				text-decoration: none
 				&:hover
 					text-decoration: underline
-
 .wrapper
 	background: $light-green
 	>article
@@ -366,3 +365,133 @@
 					margin-bottom: 2rem
 				p.title
 					font-weight: 500
+			>.services-list
+				.list
+					display: flex
+					justify-content: space-between
+					flex-wrap: wrap
+					a
+						text-decoration: none
+					.item
+						margin-bottom: 40px
+						border: 1px solid $green
+						border-radius: 6px
+						transition: 0.5s all
+						&:hover
+							box-shadow: 0 3px 6px rgba(4, 109, 27, 0.16), 0 3px 6px rgb(117, 144, 42)
+						.header
+							background: $green
+							color: #fff
+							text-transform: uppercase
+							text-align: center
+							padding: 0.4rem
+							font-weight: bold		
+							border-radius: 5px 5px 0 0
+						img
+							display: block
+							height: 100%
+							border-radius: 0 0 5px 5px	
+			>.text
+				background: #fff
+				box-shadow: 0 2px 4px rgba(17,17,17,.31)
+				padding: 43px
+				margin: 2rem 0
+				h2
+					margin: 0
+				.virus
+					background: #E5F0C4
+					margin: 0 -43px
+					padding: 1rem 43px
+					position: relative
+					&:after
+						content: url(/assets/img/virus.png)
+						position: absolute
+						top: -1.5rem
+						left: 1rem
+					ul
+						padding-left: 0
+						margin: 0
+						list-style: none
+						li
+							font-size: 0.9rem
+							line-height: 145%
+							&:before
+								content: "\2022"
+								color: $green 
+								font-weight: bold 
+								display: inline-block 
+								width: 1em 
+								margin-left: -1em 
+			>.local-photo
+				.gal
+					display: flex
+					justify-content: space-between
+			>.articles-list
+				.list
+					.item
+						display: flex
+						background-color: #fff
+						box-shadow: 0 2px 4px #1111114a
+						padding: 1rem
+						margin: 1rem 0
+						color: #555
+						transition: 0.5s all
+						&:hover
+							box-shadow: 0 1px 2px #1111114a
+						img
+							margin-right: 1rem
+						.desc
+							h3
+								a
+									color: $green
+									text-decoration: none
+									&:hover
+										text-decoration: underline	
+			>ul.pagination
+				list-style: none
+				padding: 0
+				margin: 0
+				a
+					text-decoration: none
+					color: $green
+					padding: 0.4rem 0.6rem
+					display: block
+				li
+					display: inline-block
+					margin-right: 1rem
+					border: 1px solid $green
+					transition: background-color 0.5s ease-out
+					border-radius: 4px
+					&.active
+						background: $green
+						a
+							color: #fff
+					&:hover
+						background: $green
+						a
+							color: #fff
+			>.article-intro
+				background: #fff
+				box-shadow: 0 2px 4px rgba(17,17,17,.29)
+				color: #555
+				padding: 0 43px
+				padding-bottom: 2rem
+				border-radius: 0 0 5px 5px
+				h1
+					font-size: 41px
+					margin: 1rem 0
+					line-height: 49px
+				.intro-image
+					height: 280px
+					width: calc(100%+86px)
+					margin-left: -43px
+					margin-right: -43px
+					border-radius: 5px 5px 0 0
+				ul
+					list-style: none
+					border-left: 2px solid $green
+					font-size: 0.9rem
+					padding-left: 1rem
+					li
+						line-height: 1.4rem
+
