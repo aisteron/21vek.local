@@ -71,11 +71,17 @@
 		margin: 0 auto
 		display: flex
 		@media (max-width: 1170px)
-			width: 100%
+			width: 97%
+		@media(max-width: 880px)
+			flex-wrap: wrap
+			flex-direction: column-reverse
 		.left
 			display: flex
 			flex-direction: column
 			position: relative
+			@media(max-width: 880px)
+				width: 400px
+				margin: 0 auto
 			.badge
 				display: flex
 				margin-top: 3rem
@@ -87,9 +93,13 @@
 					text-shadow: 0 3px 6px #00000059
 			picture
 				position: absolute
-				bottom: -4px		
+				bottom: -4px
+				@media(max-width: 880px)
+					position: relative		
 		.right
 			margin-left: 9rem
+			@media(max-width: 880px)
+				margin-left: 0
 			h2
 				font-size: 53px
 				font-weight: 500

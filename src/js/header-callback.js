@@ -7,3 +7,8 @@ $_('nav li.call').addEventListener('click', (e) => {
 	if($_('nav li.call form').contains(e.target)) return;
 	event.target.querySelector('form').style.display = "block"
 })
+
+/* header mobile menu */
+$_('#nav-icon2').addEventListener('click', event => {
+	$_('#nav-icon2').classList.toggle('open')
+})
