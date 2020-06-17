@@ -10,6 +10,10 @@
 		align-items: center
 		color: #fff
 		padding: 0.5rem 0
+		@media (max-width: 1170px)
+			width: 97%
+			//padding: 0.5rem 1rem
+			//justify-content: start
 		a
 			color: #fff
 		.logo
@@ -17,6 +21,9 @@
 			.desc
 				align-self: flex-end
 				margin-bottom: 0.5rem
+				@media (max-width: 860px)
+					width: 147px
+					margin-right: 0.5rem
 			img
 				margin-right: 1rem
 			span.gold
@@ -45,10 +52,15 @@
 				li
 					display: inline-block
 					padding-right: 2rem
+					&:nth-of-type(2)
+						@media (max-width: 1000px)
+							display: none
 					&.discount
 						position: relative
 						padding-right: 0
 						margin-right: 2rem
+						@media (max-width: 1120px)
+							display: none
 						&:after
 							content: url('/assets/img/discount.svg')
 							position: absolute
@@ -69,6 +81,8 @@
 			margin-bottom: 0.3rem
 			span.maintel
 				font-size: 24px
+				min-width: 186px
+				display: inline-block
 				a
 					text-decoration: none
 			.iconset
@@ -91,6 +105,8 @@
 	.inner
 		width: 1170px
 		margin: 0 auto
+		@media (max-width: 1170px)
+			width: 100%
 		a
 			color: $green
 			text-decoration: none
@@ -99,6 +115,8 @@
 		ul.level-zero
 			margin: 0
 			padding-left: 0
+			@media (max-width: 1170px)
+				padding-left: 1rem
 			>li
 				display: inline-block
 				margin-right: 1.3rem
@@ -113,6 +131,9 @@
 					float: right
 					margin-right: 0
 					position: relative
+					padding-left: 0
+					@media (max-width: 1170px)
+						//display: none
 					form
 						background: #fff
 						position: absolute
