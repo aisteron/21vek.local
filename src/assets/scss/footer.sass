@@ -23,6 +23,8 @@ footer
 			justify-content: space-between
 			@media (max-width: 1170px)
 				width: 97%
+				nav
+					flex-wrap: wrap
 			nav
 				display: flex
 				.item
@@ -58,6 +60,9 @@ footer
 						font-weight: 500
 						text-align: center
 						cursor: pointer
+						@media (max-width: 600px)
+							margin-bottom: 1rem
+							display: block
 						&:hover
 							background: #d8e9a7
 
@@ -71,7 +76,7 @@ footer
 	.modal-wrap
 		display: none
 		position: fixed
-		z-index: 1
+		z-index: 3
 		top: 0
 		left: 0
 		width: 100%

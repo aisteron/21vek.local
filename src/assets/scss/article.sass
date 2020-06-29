@@ -1,6 +1,10 @@
 .bread
 	width: 1170px
 	margin: 0 auto
+	@media (max-width: 1170px)
+		width: 90%
+		//padding-left: 1rem
+		margin-left: 1rem
 	ul
 		list-style: none
 		padding-left: 0
@@ -27,11 +31,15 @@
 		width: 1170px
 		margin: 0 auto
 		justify-content: space-between
+		@media (max-width: 1170px)
+			width: 100%
 		h2
 			font-size: 29px
 			color: #555
 		.sidebar
 			width: 260px
+			@media (max-width: 1170px)
+				display: none		
 			.box
 				background-color: #fff
 				border-radius: 5px
@@ -89,6 +97,8 @@
 					
 		>.content
 			width: 860px
+			@media (max-width: 1170px)
+				width: 100%
 			.intro
 				background: #fff
 				box-shadow: 0 2px 4px #1111114f
@@ -98,13 +108,39 @@
 					background: linear-gradient(56deg, rgba(36,64,137,1) 0%, rgba(53,107,255,1) 100%)
 					display: flex
 					position: relative
-					border-radius: 5px 5px 0 0 
+					border-radius: 5px 5px 0 0
+
+					@media (max-width: 1170px)
+						border-radius: 0
+					@media (max-width: 890px)
+						flex-direction: column-reverse
+						height: auto
+						overflow: hidden
+						.desc
+							position: absolute
+							z-index: 2
+							background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.20772058823529416) 59%, rgba(0,0,0,0) 100%)
+							span
+								text-shadow: 0 1px 1px #111
+						img
+							position: relative
+							clip-path: none
+							border-radius: 0
+							width: 100%
+					@media (max-width: 870px)
+						.desc
+							position: relative
+							width: 100%
 					.desc
 						width: 300px
 						color: #fff
 						font-size: 20px
 						line-height: 33px
 						padding: 40px
+						@media (max-width: 1170px)
+							width: 40%
+							padding: 35px
+							padding-left: 1rem
 						input[type="submit"]
 							display: block
 							background: transparent
@@ -117,10 +153,20 @@
 					img
 						clip-path: polygon(40% 0%, 100% 0, 100% 100%, 30% 100%)
 						position: absolute
-						border-radius: 5px 5px 0 0 
+						border-radius: 5px 5px 0 0
+						@media (max-width: 1170px)
+							//position: relative 
+							right: 0
 				.content
 					display: flex
-					padding: 0 40px 
+					padding: 0 40px
+					@media (max-width: 1170px)
+						padding: 0 1rem
+					@media (max-width: 650px)
+						img
+							display: none
+						.desc
+							margin-left: 0	 
 					img
 						margin-top: 2.5rem
 						min-width: 127px
@@ -132,6 +178,11 @@
 						p
 							color: #707070
 			.price-table
+				@media (max-width: 1170px)
+					h2
+						margin-left: 1rem
+				@media (max-width: 600px)
+					overflow-x: scroll
 				.tab-area
 					.head
 						border-bottom: 1px solid #707070
@@ -149,6 +200,8 @@
 						input[type="submit"]
 							float: right
 							margin-top: -1rem
+						@media (max-width: 1170px)	
+							margin-right: 1rem
 					.body
 						.fiz
 							display: flex
@@ -251,7 +304,10 @@
 				.list
 					display: flex
 					justify-content: space-between
-
+					@media (max-width: 600px)
+						flex-wrap: wrap
+						.item
+							margin-bottom: 1rem
 					.item
 						text-align: center
 						position: relative
@@ -260,6 +316,8 @@
 							position: absolute
 							top: 40%
 							right: -65px
+							@media (max-width: 700px)
+								content: ''
 						&:last-of-type
 							&:after
 								content: ''	
@@ -269,7 +327,14 @@
 							color: #707070
 							margin-top: 0.5rem	
 			.features
+				@media (max-width: 1170px)
+					h2
+						padding-left: 1rem
 				.list
+					@media (max-width: 1170px)
+						width: 100%
+						margin: 0 auto
+
 					.item
 						font-weight: bold
 						text-shadow: 0 2px 2px #11111159
@@ -281,6 +346,15 @@
 						padding-left: 2rem
 						margin: 2rem 0
 						transform: skew(-20deg)
+
+						@media (max-width: 1170px)
+							transform: skew(0) !important
+							span
+								transform: skew(0) !important
+						@media (max-width: 700px)
+							justify-content: normal
+							img
+								display: none
 						img
 							margin-right: -1.5rem
 							transform: skew(20deg)
@@ -300,6 +374,11 @@
 				.list
 					display: flex
 					justify-content: space-between
+					@media (max-width: 1170px)
+						flex-wrap: wrap
+						justify-content: center
+						.item
+							margin: 1rem
 					.item
 						width: 248px
 					.desc
@@ -317,9 +396,19 @@
 							font-size: 14px
 							padding: 0.8rem
 			.certs, .letters
+				@media (max-width: 1170px)
+					h2
+						margin-left: 1rem
 				.list
 					display: flex
 					justify-content: space-between
+					@media (max-width: 1170px)
+						flex-wrap: wrap
+						justify-content: normal
+						img
+							margin: 1rem
+					@media (max-width: 600px)
+						justify-content: center
 			.lead
 				background: linear-gradient(180deg, rgba(172,214,51,1) 0%, rgba(150,189,40,1) 100%)
 				margin: 2rem 0
@@ -329,6 +418,14 @@
 					display: flex
 					align-items: center
 					padding: 30px 0
+					@media (max-width: 1170px)
+						width: 100%
+					@media (max-width: 630px)
+						width: 90%
+						img
+							display: none
+						span.title
+							font-size: 2rem		
 				.right
 					span.title
 						font-size: 53px
@@ -345,6 +442,8 @@
 						width: 333px
 						border-radius: 5px
 						padding: 1.5rem
+						@media (max-width: 470px)
+							width: 83%
 						p
 							font-size: 18px
 							font-weight: 500
@@ -366,6 +465,11 @@
 				p.title
 					font-weight: 500
 			>.services-list
+				@media (max-width: 600px)
+					h2
+						margin-left: 1rem
+					.list
+						justify-content: space-evenly
 				.list
 					display: flex
 					justify-content: space-between
@@ -423,6 +527,14 @@
 								width: 1em 
 								margin-left: -1em 
 			>.local-photo
+				@media (max-width: 890px)
+					h2
+						margin-left: 1rem
+					.gal
+						justify-content: space-evenly
+						flex-wrap: wrap
+						img
+							margin: 1rem
 				.gal
 					display: flex
 					justify-content: space-between
@@ -494,4 +606,39 @@
 					padding-left: 1rem
 					li
 						line-height: 1.4rem
+	.mobile-menu
+		display: none
+		&.open
+			display: block
+		position: fixed
+		top: 0
+		background: $green
+		z-index: 2
+		min-height: 100vh
+		min-width: 50vw
+		padding: 1rem
+		.line
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-bottom: 1px solid lighten($green, 10%)
+			color: #fff
+			padding-bottom: 0.5rem
+			margin-bottom: 0.5rem
+			box-shadow: 0px 1px 0px #7ea01d
+			flex-direction: row-reverse
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			li
+				//line-height: 2rem
+				a
+					padding: 1rem 0
+					display: inline-block
+		a
+			color: #fff
+			text-decoration: none
+			text-transform: uppercase
+			
 

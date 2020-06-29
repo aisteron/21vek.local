@@ -1,0 +1,27 @@
+<svg id="bus_4_" data-name="bus (4)" xmlns="http://www.w3.org/2000/svg" width="14.218" height="14.218" viewBox="0 0 14.218 14.218">
+  <g id="Group_2" data-name="Group 2" transform="translate(0 4.147)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_1" data-name="Path 1" d="M1.481,151.7v-1.777a.3.3,0,1,0,0-.592A1.483,1.483,0,0,0,0,150.814v.592a.89.89,0,0,0,.889.889h.592a.3.3,0,1,0,0-.592Z" transform="translate(0 -149.333)" fill="green"/>
+    </g>
+  </g>
+  <g id="Group_4" data-name="Group 4" transform="translate(12.441 4.147)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_2" data-name="Path 2" d="M448.3,149.333a.3.3,0,0,0,0,.592V151.7a.3.3,0,0,0,0,.592h.592a.89.89,0,0,0,.889-.889v-.592A1.483,1.483,0,0,0,448.3,149.333Z" transform="translate(-448 -149.333)" fill="green"/>
+    </g>
+  </g>
+  <g id="Group_6" data-name="Group 6" transform="translate(2.37 12.441)">
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_3" data-name="Path 3" d="M88,448a.3.3,0,0,0-.3.3H85.924a.3.3,0,0,0-.592,0v.592a.89.89,0,0,0,.889.889h1.185a.89.89,0,0,0,.889-.889V448.3A.3.3,0,0,0,88,448Z" transform="translate(-85.332 -448)" fill="green"/>
+    </g>
+  </g>
+  <g id="Group_8" data-name="Group 8" transform="translate(8.886 12.441)">
+    <g id="Group_7" data-name="Group 7">
+      <path id="Path_4" data-name="Path 4" d="M322.666,448a.3.3,0,0,0-.3.3h-1.777a.3.3,0,1,0-.592,0v.592a.89.89,0,0,0,.889.889h1.185a.89.89,0,0,0,.889-.889V448.3A.3.3,0,0,0,322.666,448Z" transform="translate(-320 -448)" fill="green"/>
+    </g>
+  </g>
+  <g id="Group_10" data-name="Group 10" transform="translate(1.185)">
+    <g id="Group_9" data-name="Group 9">
+      <path id="Path_5" data-name="Path 5" d="M53.034,0H44.148a1.483,1.483,0,0,0-1.481,1.481V11.552a1.483,1.483,0,0,0,1.481,1.481h8.886a1.483,1.483,0,0,0,1.481-1.481V1.481A1.483,1.483,0,0,0,53.034,0Zm-7.7,1.185H51.85a.889.889,0,1,1,0,1.777H45.333a.889.889,0,0,1,0-1.777Zm0,10.071a.889.889,0,1,1,.889-.889A.89.89,0,0,1,45.333,11.256Zm6.517,0a.889.889,0,1,1,.889-.889A.89.89,0,0,1,51.85,11.256Zm1.481-3.851a.89.89,0,0,1-.889.889h-7.7a.89.89,0,0,1-.889-.889V4.443a.89.89,0,0,1,.889-.889h7.7a.89.89,0,0,1,.889.889V7.405Z" transform="translate(-42.667)" fill="green"/>
+    </g>
+  </g>
+</svg>

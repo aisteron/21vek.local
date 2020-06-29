@@ -33,6 +33,26 @@ function openPopup() {
 		})
 	}
 
+	if($_('.main-faq .inverted')) {
+		$_('.main-faq .inverted').addEventListener('click', () => {
+			wrap.style.display = 'block'
+		})
+	}
+
+	$_('.mobile-menu .line span').addEventListener('click', () => {
+		wrap.style.display = 'block'
+		wrap.querySelector('form p').innerHTML = 'Оставьте свой номер и мы вам перезвоним'
+	})
+
+	if($_('.main-prices')) {
+		$$_('.main-prices .item input[type="submit"]').forEach( el => {
+			el.addEventListener('click', () => {
+				wrap.style.display = 'block'
+			})
+		})
+		
+	}
+
 
 	close.addEventListener('click', () => {
 		wrap.style.display = "none"
