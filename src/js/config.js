@@ -1,11 +1,11 @@
 // локальный сервер
-
-/*export const CONFIG = {
+/*
+export const CONFIG = {
 	php_path: 'http://api.local/',
 	fancy_path: ''
 }
-*/
 
+*/
 
 // боевой сервер
 

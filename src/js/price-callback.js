@@ -86,12 +86,12 @@ function submitForm() {
 
 
 	let form = $_('footer form');
-		form.addEventListener('submit', event => {
+		form.addEventListener('submit', event => { 
 			event.preventDefault();
 			let data = {
 				phone: form.querySelector('input[type="text"]').value
 			}
-			fetch(CONFIG.php_path+'callback.php', {
+			fetch(CONFIG.php_path, {
 				method: 'POST',
 				mode: 'cors',
 				headers: {'Content-Type': 'application/json'},

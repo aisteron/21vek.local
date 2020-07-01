@@ -4,8 +4,7 @@ import {CONFIG} from './config';
 document.readyState !== 'loading' ? init() : document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-
-	loadFancy()
+	if($_(('[data-fancybox]'))) loadFancy()
 }
 
 function loadFancy(){
