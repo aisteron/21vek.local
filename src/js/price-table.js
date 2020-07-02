@@ -32,6 +32,15 @@ function init() {
 
 	let tabs = $$_('.tab-area .body .fiz .tabs ul li');
 
+		// init state first active
+		tabs[0].classList.add('active')
+		let firstActiveType = tabs[0].classList[0];
+			$$_('.tab-area .fiz .content').forEach(el => { 
+				if(el.classList[1] == firstActiveType) {
+					el.style.display = 'block'
+				}
+			})
+
 		tabs.forEach(el => {
 			el.addEventListener('click', event => {
 				let type = event.target.classList[0];
