@@ -8,9 +8,20 @@ function init() {
 
 	if(!$_('.price-table')) return;
 
+	// init
+	let firstTab = $$_('.tab-area .head span')[0]
+	firstTab.classList.add('active');
+	if(firstTab.classList[0] == 'fiz'){
+		$_('.tab-area .body .'+firstTab.classList[0]).style.display = "flex";
+	} else {
+		$_('.tab-area .body .'+firstTab.classList[0]).style.display = "block";
+	}	
+
+
 	$$_('.tab-area .head span').forEach(el => {
 
 		el.addEventListener('click', event => {
+
 			let tabName = event.target.classList[0];
 			$$_('.tab-area .body div.fiz, .tab-area .body div.ur').forEach(el => el.style.display = "none")
 			$$_('.tab-area .head span').forEach(el => el.classList.remove('active'))
