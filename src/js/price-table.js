@@ -41,6 +41,10 @@ function init() {
 
 	/*вертикальные табы у физ.лица*/
 
+	fiz()
+	function fiz() {
+	if(!$_('.tab-area .body .fiz .tabs ul li')) return;
+
 	let tabs = $$_('.tab-area .body .fiz .tabs ul li');
 
 		// init state first active
@@ -64,5 +68,6 @@ function init() {
 
 			})
 		})
+	}	
 
 }
